@@ -1,7 +1,13 @@
 <template>
-  <div class="article">
+  <div
+    class="article"
+    :class="{ 'article-active': isActive, shadow: isActive }"
+    @click="updateLook"
+  >
     <img src="" />
-    <h3>{{ articles.title }}</h3>
+    <h3 class="title" :class="classObj" :style="{ 'font-size': fontSize }">
+      {{ articles.title }}
+    </h3>
     <p>{{ articles.description }}</p>
     <button @click="changeName">Change Title</button>
     <SubArticle :id="articles.id" />
@@ -22,6 +28,13 @@ export default {
   },
   data() {
     return {
+      fontSize: '20px',
+      isActive: false,
+      showShadow: false,
+      classObj: {
+        active: false,
+        size: false,
+      },
       title: 'article title',
       description: 'description',
     }
@@ -32,6 +45,12 @@ export default {
         title: 'New article title',
         id: this.articles.id,
       })
+    },
+    updateLook() {
+      this.isActive = true
+      this.showShadow = true
+      this.classObj.active = true
+      this.fontSize = '40px'
     },
   },
 }
@@ -44,5 +63,19 @@ export default {
   border-radius: 5px;
   padding: 10px;
   margin: 20px;
+  text-align: center;
+}
+.article-active {
+  background-color: red;
+}
+
+.shadow {
+  box-shadow: 10px 10px 10px rgb(141, 141, 141);
+}
+.title.active {
+  color: orange;
+}
+.title.size {
+  font-size: 20px;
 }
 </style>
