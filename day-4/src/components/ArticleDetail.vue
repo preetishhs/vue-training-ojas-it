@@ -7,7 +7,6 @@
       saepe amet fugiat. Iure voluptates nisi, consequuntur fugiat cupiditate
       sequi.
     </p>
-    <input v-model="name" />
   </div>
 </template>
 <script>
@@ -21,6 +20,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .article-detail {
+  margin: 20px;
   width: 300px;
   height: 300px;
   padding: 20px;

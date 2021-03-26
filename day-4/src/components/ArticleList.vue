@@ -11,7 +11,6 @@
 </template>
 <script>
 import Article from '@/components/Article.vue'
-import axios from 'axios'
 export default {
   components: {
     Article,
@@ -38,26 +37,6 @@ export default {
       ],
     }
   },
-  created() {
-    axios
-      .get('https://jsonplaceholder.typicode.com/posts', {
-        params: {
-          postId: 1,
-        },
-      })
-      .then(function (response) {
-        console.log(response)
-      })
-
-    axios
-      .get('https://jsonplaceholder.typicode.com/posts')
-      .then((response) => {
-        console.log(response.data)
-      })
-      .catch((error) => {
-        console.error(error.response)
-      })
-  },
   methods: {
     updateName(data) {
       console.log(data)
@@ -70,3 +49,10 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+</style>
