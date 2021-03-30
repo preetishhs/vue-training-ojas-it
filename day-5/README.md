@@ -1,12 +1,10 @@
-# day-2
+# day-5
 
 ### Topics covered
-* Setting up project from CLI (node.js, vue-cli)
-* Folder Architecture
-* Lifecycle hooks
-* Component communication	 (props and emit)
-* Event Bus (Deprecated)
-
+* Introduction to Vue router
+* Creating routes and navigation
+* Navigating via code
+* Dynamic routing
 
 ## Project setup
 ```

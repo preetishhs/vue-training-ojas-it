@@ -1,9 +1,11 @@
-# day-4
+# day-6 
 
 ### Topics covered
-* Making API Calls
-* Introduction to Mixins and code sharing
-
+* Child routes / Nested routes
+* Introduction to Vuex and State management
+* Storing and manipulating data in Vuex
+* Using Vuex in Components
+* Namespaced store and modules
 
 
 ## Project setup

@@ -1,11 +1,13 @@
 # day-2
 
 ### Topics covered
-* Setting up project from CLI (node.js, vue-cli)
-* Folder Architecture
-* Lifecycle hooks
-* Component communication	 (props and emit)
-* Event Bus (Deprecated)
+* Dynamic components
+* Slots and named Slots
+* Binding classes and styles (CSS) 
+* Form input binding (Radio, Checkbox etc) 
+* Events and event modifiers
+* Keyboard events and modifiers
+
 
 
 ## Project setup
