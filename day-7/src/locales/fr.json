@@ -1,0 +1,10 @@
+{
+  "msg": "Bonjour le monde",
+  "nav": {
+    "home": "Accueil",
+    "usersList": "Liste des utilisateurs",
+    "articleList": "Liste d'articles",
+    "settings": "Paramètres"
+  },
+  "goodMorningToast": "Bojour, {username} wlecom!"
+}
