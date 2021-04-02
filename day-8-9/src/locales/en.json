@@ -1,0 +1,11 @@
+{
+  "msg": "hello world",
+  "welcome": "Good Morning {username}, Welcome!",
+  "nav": {
+    "home": "Home",
+    "usersList": "Users List",
+    "articleList": "Article List",
+    "settings": "Settings"
+  },
+  "myArticles": "No Articles | One Article | {count} Articles"
+}
